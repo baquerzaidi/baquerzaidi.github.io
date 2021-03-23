@@ -1,0 +1,716 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
+@font-face {
+    font-family: 'modern_pictogramsnormal';
+    src: url('fonts/modernpics-webfont.eot');
+    src: url('fonts/modernpics-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/modernpics-webfont.woff') format('woff'),
+         url('fonts/modernpics-webfont.ttf') format('truetype'),
+         url('fonts/modernpics-webfont.svg#modern_pictogramsnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+	font-family: 'FajerNooriNastalique';
+	src: url('fonts/FajerNooriNastalique.eot?#iefix') format('embedded-opentype'),  url('fonts/FajerNooriNastalique.woff') format('woff'), url('fonts/FajerNooriNastalique.ttf')  format('truetype'), url('fonts/FajerNooriNastalique.svg#FajerNooriNastalique') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body, html {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #e3e3e3;
+	height: 100%;
+	font-family: Calibri, Tahoma, Verdana, sans-serif;
+}
+
+.font {
+	font-family: Calibri, Tahoma, Verdana;
+	font-size: 16px;
+	font-style: normal;
+	color: #000;
+}
+h2 {
+	text-align: center;
+}
+h1 {
+	text-align: center;
+}
+.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+}
+
+figure {
+	background-color: #fff;
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+figure > img {
+	border-bottom: 4px solid #000;
+}
+figcaption {
+	background-color: #fff;
+	padding: 20px;
+	width: calc(304px - 40px);
+}
+
+figcaption > p {
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 11px;
+}
+
+h5 {
+	margin: 0;
+}
+h4 {
+	margin: 0;
+}
+.font30 {
+	font-size: 30px
+}
+.removebackground {
+	background-color: transparent;
+}
+.width78 {
+	width: 78%;
+	padding-bottom: 50px;
+}
+
+/*NavBar*/
+#cssmenu {
+  background: #000000;
+  width: auto;
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: table;
+  zoom: 1;
+  text-align:center;
+  width: 100%;
+  word-spacing: .25em;
+}
+#cssmenu ul:after {
+  content: ' ';
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+  float: none;
+  display: inline-block;
+  padding: 0;
+}
+#cssmenu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#cssmenu ul li a:hover {
+  color: #00abef;
+}
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+#cssmenu ul li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+#cssmenu ul li a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #00abef;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: #00abef;
+}
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    height: 1px;
+    background: #ffffff;
+    width: 100%;
+    opacity: .2;
+  }
+  #cssmenu ul li.last > a:before,
+  #cssmenu ul li:last-child > a:before {
+    display: none;
+  }
+}
+
+/*Slider*/
+
+
+
+/*Content*/
+.content_width {
+	width: 100%;
+}
+.content {
+	margin: 60px auto;
+	width: 72%;
+	
+}
+.headline {
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	height: 80px;
+	font-size: 36px;
+	font-family: 'Open Sans', sans-serif;
+	overflow: hidden;
+	margin: 10px 0;
+}
+.headline_content {
+	margin: 15px auto;
+	width: 78%;
+	font-weight: 700;
+}
+.headline_content_right {
+	float: right;
+}
+.headline_content_left {
+	float: left;
+}
+
+
+#bio {
+	max-width: 	600px;
+	text-align: left;
+	line-height: 140%;
+	font-size: 17px;
+	margin: auto;
+	text-align: center;
+}
+#bio > p:not(.bio_shairi) {
+	text-align: left;
+}
+.bio_shairi {
+	text-align: center;
+	font-family: 'FajerNooriNastalique', Calibri;
+	font-size: 20px;
+	direction: rtl;
+	line-height: 150%;
+}
+#bio > img {
+	border: 2px solid black;
+	text-align: center;
+}
+
+.urdumedquote {
+  border: 1px solid black;
+  border-radius: 3px;
+  max-width: 520px;
+  margin: 10px auto;
+  padding: 15px;
+  background: #fff;
+  direction: rtl;
+}
+.urdumedquote > p {
+  margin: 0;
+  font-family: 'FajerNooriNastalique', Calibri;
+  font-size: 20px;
+  text-align: right;
+  line-height: 160%;
+}
+.urdumedquote > .quote_person {
+  text-align: left;
+  line-height: 20px;
+}
+
+#marsialist {
+	margin: auto
+	width: 72%;
+	text-align: center;
+}
+#marsialist a {
+	color: black;
+}
+#marsialist a:visited {
+	color: black;
+}
+#marsialist a:hover {
+	color: #FF0;
+}
+#marsialist > .home_intro {
+	text-align: left;
+	max-width: 800px;
+	margin: auto;
+	line-height: 140%;
+	font-size: 17px;
+}
+.urduquote {
+  border: 1px solid black;
+  border-radius: 3px;
+  max-width: 420px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #fff;
+  direction: rtl;
+}
+.urduquote > p {
+  margin: 0;
+  font-family: 'FajerNooriNastalique', Calibri;
+  font-size: 20px;
+  text-align: right;
+  line-height: 150%;
+}
+.urduquote > .quote_person {
+  text-align: left;
+  line-height: 20px;
+}
+.quote_person_occupation {
+  font-size: 14px;
+}
+
+.urdulongquote {
+  border: 1px solid black;
+  border-radius: 3px;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #fff;
+  direction: rtl;
+}
+.urdulongquote > p {
+  margin: 0;
+  font-family: 'FajerNooriNastalique', Calibri;
+  font-size: 20px;
+  text-align: right;
+  line-height: 150%;
+}
+.urdulongquote > .quote_person {
+  text-align: left;
+  line-height: 20px;
+}
+.quote_person_occupation {
+  font-size: 12px;
+}
+#booklist {
+	margin: auto;
+	text-align: center;
+}
+#booklist figure {
+	margin: 4px;
+	text-align: left;
+}
+#booklist figure > img {
+	border: 1px solid black;
+	border-bottom: 4px solid #000;
+}
+#booklist a:visited {
+	color: black;
+}
+
+.bookitem {
+  width: 304px;
+  height: 228px;
+  margin: 10px auto 4px auto;
+  border: 1px solid black;
+}
+.Bookdes {
+  width: 300px;
+  padding: 10px;
+  background-color: white;
+  margin: 0 auto 25px auto;
+  text-align: justify;
+  text-justify: auto;
+}
+.bookbtn {
+  display: inline-block;  
+  padding: 10px 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #00a9ee;
+  color: white;
+  font-family: Exo;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #0087bf;
+  border-right: 1px solid #0087bf;
+  transition: background-color 0.8s ease-in-out;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -moz-transition: background-color 0.4s ease-in-out;
+  -ms-transition: background-color 0.4s ease-in-out;
+  -o-transition: background-color 0.4s ease-in-out;
+  
+}
+
+.bookbtn:hover {
+  background-color: #0097d4;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.bookbtn:active {
+  border-right: none;
+  border-bottom: none;
+  border-left: 1px solid #0087bf;
+  border-top: 2px solid #0087bf;
+}
+#book0 {
+  background-image: url("books/images/nigar-small.jpg");
+}
+#book1 {
+  background-image: url("books/images/lazzat-small.jpg");
+}
+#book2 {
+  background-image: url("books/images/hurmat-small.jpg");
+}
+#book3 {
+  background-image: url("books/images/furat-small.jpg");
+}
+#book4 {
+  background-image: url("books/images/gazal-small.jpg");
+}
+#book5 {
+  background-image: url("books/images/rasa-small.jpg");
+}
+#book6 {
+  background-image: url("books/images/charagh-small.jpg");
+}
+#book7 {
+  background-image: url("books/images/silsila-small.jpg");
+}
+#book8 {
+  background-image: url("books/images/alnajm-small.jpg");
+}
+#book9 {
+  background-image: url("books/images/bharatpuri-small.jpg");
+}
+
+#sidephotos {
+	margin: auto;
+	margin-top: 30px;
+	text-align: center;
+}
+.whitebg {
+	width: 100%;
+	background-color: white;
+	padding: 10px 0;
+	margin-bottom: 50px;
+}
+.contact_container {
+	background-color: #00A9EE;
+	border-radius: 10px;
+	padding: 10px;
+	max-width: 800px;
+	margin: auto;
+}
+.single_line {
+	line-height: 0;
+	border-bottom: 1px solid black;
+	max-width: 600px;
+	border-radius: 100%;
+	margin: auto;
+}
+#slickcarousel {
+	width: 700px;
+	margin: 70px auto;
+	margin-top: 10px;
+}
+#bookphoto {
+	display: block;
+	margin: auto;
+}
+.tcontainer {
+	margin: auto;
+}
+table {
+  border-collapse: collapse;
+  margin: auto;
+  margin-left: 20px;
+}
+    
+td {
+  padding: 10px;
+  text-align: center;
+  font-family: Exo, 'Exo';
+  font-size: 100%;
+  color: black;
+  text-decoration: none;
+}
+td a:visited {
+	text-decoration: none;
+	color: black;	
+}
+
+tr:nth-child(2n+1) {
+  border: 1px solid #00a9ee;
+  border-radius: 10px;
+  border-collapse: collapse;
+  border-spacing: 20px;
+  display: block;
+  overflow: hidden;
+  margin-top: 20px;
+  background-color: #d6d6d6;
+}
+
+tr:nth-child(2n) {
+  border-collapse: collapse;
+  border-spacing: 20px;
+  display: block;
+  overflow: hidden;
+  margin-top: 5px;
+}
+tr:nth-child(2n) > td {
+  padding-top: 4px;
+}
+tr:nth-child(2n) > td:nth-child(2) {
+  background-color: #00a9ee;
+  border-radius: 8px;
+}
+tr:nth-child(2n) > td:nth-child(4) {
+  background-color: #00a9ee;
+  border-radius: 8px;
+}
+
+tr:first-child {
+  margin-top: 0;
+}
+tr > td:first-child {
+  min-width: 31px;
+}
+tr:nth-child(2n+1) > td:nth-child(2) {
+  width: 100px;
+  min-width: 40px;
+  direction: rtl;
+}
+tr:nth-child(2n+1) > td:nth-child(3) {
+  width: 275px;
+  min-width: 100px;
+  direction: rtl;
+}
+tr:nth-child(2n+1) > td:nth-child(4) {
+  width: 80px;
+  min-width: 57px;
+}
+tr:nth-child(2n+1) > td:last-child {
+  width: 55px;
+  min-width: 45px;
+}
+
+tr > td > a > span {
+  font-family: 'modern_pictogramsnormal';
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+tr > td > a:visited > span {
+  text-decoration: none;
+  color: black;
+}
+@media screen and (max-width: 1240px) {
+	.width78 {
+		width: 84%;
+	}
+	figure {
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+	figure > img {
+		width: 280px;
+		height: auto;
+	}
+	figcaption {
+		padding: 17px;
+		width: calc(280px - 34px);
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.width78 {
+		width: 90%;
+	}
+	figure {
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+	figure > img {
+		width: 200px;
+		height: auto;
+	}
+	figcaption {
+		padding: 10px;
+		width: calc(200px - 20px);
+	}
+}
+
+@media screen and (max-width: 768px) {
+  #slickcarousel {
+	width: 550px;
+	margin: auto;
+  }
+  #bio > img {
+	width: 350px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #slickcarousel {
+	width: 500px;
+	margin: auto;
+  }
+  #bio > img {
+	width: 300px;
+  }
+}
+@media screen and (max-width: 580px) {
+  #slickcarousel {
+	width: 400px;
+	margin: auto;
+  }
+  #bio > img {
+	width: 200px;
+  }
+}
+
+/*Footer*/
+
+footer {
+	background-color: #00a9ee;
+	width: 100%;
+	padding: 10px 0;
+	border-top: 4px solid black;
+}
+footer > p {
+	text-align: center;
+	
+}
+#fbutton {
+	width: 20px;
+	height: 20px;
+	background-color: #2E2E2E;
+	border-radius: 4px;
+	color: #fff;
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 21px;
+	display: inline-block;
+	position: relative;
+	top: 3px;
+	-webkit-transition: background-color 0.3s ease-in-out;
+	-moz-transition: background-color 0.3s ease-in-out;
+	-ms-transition: background-color 0.3s ease-in-out;
+	-o-transition: background-color 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
+}
+#fbutton:hover {
+	background-color: #425f9a;
+	color: #fff;  
+}
+#foot {
+	text-align: center;
+	color: black;
+}
+.footerfont {
+	font-family: Calibri, Tahoma, Verdana;
+	font-size: 12px;
+	font-style: normal;
+	color: #000;
+}
+.footerfont > a {
+	text-decoration: none;
+	color: #000;
+}
+.footerfont > a:hover {
+	color: #FF0;
+}
+.btn {
+  display: inline-block;  
+  padding: 15px 25px;
+  margin: 20px 20px 0 20px;
+  border-radius: 5px;
+  background-color: #00a9ee;
+  color: white;
+  font-family: Exo, 'Exo';
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #0087bf;
+  border-right: 1px solid #0087bf;
+  transition: background-color 0.8s ease-in-out;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -moz-transition: background-color 0.4s ease-in-out;
+  -ms-transition: background-color 0.4s ease-in-out;
+  -o-transition: background-color 0.4s ease-in-out;
+  
+}
+
+.btn:hover {
+  background-color: #0097d4;
+  text-decoration: none;
+}
+
+.btn:active {
+  border-right: none;
+  border-bottom: none;
+  border-left: 1px solid #0087bf;
+  border-top: 2px solid #0087bf;
+}
